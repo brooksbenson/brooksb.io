@@ -1,0 +1,10 @@
+.project-section {
+  padding: 0 $one-half-rem;
+
+  &__heading {
+    color: $theme-black;
+    font-size: $three-rem;
+    font-weight: $font-weight-thin;
+    transform: skew(-5deg);
+  }
+}

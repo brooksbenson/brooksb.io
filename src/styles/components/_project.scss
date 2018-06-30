@@ -1,0 +1,77 @@
+.project {
+  border-bottom: 1px dotted $theme-grey;
+  margin-bottom: $one-half-rem;
+  margin-top: $one-half-rem;
+  padding-bottom: $one-rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $one-rem;
+  }
+
+  &__heading {
+    border-bottom: 1px dotted $theme-grey-light;
+    color: darken($theme-grey, 20%);
+    font-size: $one-half-rem + 0.2;
+    font-weight: $font-weight-thin;
+    transform: skew(-5deg);
+    &:hover {
+      border-bottom: 1px dotted $theme-green;
+    }
+  }
+
+  &__tech {
+    & > * {
+      margin-left: $one-rem;
+    }
+  }
+
+  &__video-wrapper {
+    height: 0;
+    overflow: hidden;
+    margin-bottom: $one-rem;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: $two-half-rem;
+  }
+
+  &__video {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+  &__about {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__links {
+    color: $theme-grey;
+    font-size: $one-rem + 0.2;
+    padding-right: $one-half-rem;
+    min-width: $one-rem * 12.5;
+  }
+
+  &__link {
+    border-bottom: 1px dotted $theme-grey-light;
+    display: block;
+    margin-bottom: $one-rem;
+    &:hover {
+      border-bottom: 1px dotted $theme-green;
+    }
+  }
+
+  &__description-heading {
+    font-size: $one-rem + 0.2;
+    margin-bottom: $half-rem;
+  }
+
+  &__description {
+    flex-grow: 1;
+    font-size: $one-rem + 0.2;
+  }
+}

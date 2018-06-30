@@ -1,0 +1,45 @@
+.contact-page {
+  padding-left: $one-half-rem;
+
+  &__heading {
+    color: $theme-black;
+    font-size: $three-rem;
+    font-weight: $font-weight-thin;
+    transform: skew(-5deg);
+  }
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  &__image {
+    background: pink;
+    border-radius: 50%;
+    height: $one-rem * 15;
+    margin: $two-rem 0;
+    width: $one-rem * 15;
+  }
+  &__name {
+    font-size: $two-half-rem;
+  }
+  &__email {
+    font-size: $one-rem + 0.1;
+  }
+  &__about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: $two-rem;
+    max-width: $one-rem * 40;
+    > h3 {
+      font-size: $two-rem;
+      font-weight: $font-weight-thin;
+      margin-bottom: $half-rem;
+      transform: skew(-5deg);
+    }
+    > p {
+      font-size: $one-half-rem;
+      text-align: justify;
+    }
+  }
+}
