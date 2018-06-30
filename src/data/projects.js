@@ -15,6 +15,6 @@ export default [
     url: 'https://expensify17.herokuapp.com/',
     repo: 'https://github.com/brooksbenson/expensify',
     description:
-      'Expensify is an application for helping people record their expenses'
+      'Expensify is an application for helping people record their expenses.'
   }
 ];
