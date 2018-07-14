@@ -1,5 +1,5 @@
 .contact-page {
-  padding-left: $one-half-rem;
+  padding: 0 $one-half-rem;
 
   &__heading {
     color: $theme-black;
@@ -7,39 +7,43 @@
     font-weight: $font-weight-thin;
     transform: skew(-5deg);
   }
-  &__content {
+  &__about-me {
     align-items: center;
+    background: $off-white;
+    border-radius: 3px;
+    border: 1px dotted black;
     display: flex;
-    flex-direction: column;
-  }
-  &__image {
-    background: pink;
-    border-radius: 50%;
-    height: $one-rem * 15;
-    margin: $two-rem 0;
-    width: $one-rem * 15;
-  }
-  &__name {
-    font-size: $two-half-rem;
-  }
-  &__email {
-    font-size: $one-rem + 0.1;
-  }
-  &__about {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: $two-rem;
-    max-width: $one-rem * 40;
-    > h3 {
-      font-size: $two-rem;
-      font-weight: $font-weight-thin;
-      margin-bottom: $half-rem;
-      transform: skew(-5deg);
+    margin-top: $one-rem;
+    padding: $two-rem $one-rem;
+    @media (max-width: 500px) {
+      flex-direction: column;
+      > p {
+        margin-top: $one-half-rem;
+        text-align: center;
+      }
+    }
+    > img {
+      border: 1px solid $theme-grey;
+      border-radius: 50%;
+      height: $one-rem * 15;
+      min-height: $one-rem * 15;
+      margin-right: $two-rem;
+      min-width: $one-rem * 15;
+      width: $one-rem * 15;
     }
     > p {
       font-size: $one-half-rem;
-      text-align: justify;
+      line-height: $two-half-rem;
+      max-width: $one-rem * 35;
+      @media (min-width: 600px) {
+        max-width: 100%;
+      }
+    }
+    & a {
+      border-bottom: 1px dotted $theme-grey-light;
+      &:hover {
+        border-color: $theme-green;
+      }
     }
   }
 }

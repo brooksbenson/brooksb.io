@@ -12,6 +12,13 @@ export default () => (
       >
         Projects
       </NavLink>
+      <NavLink
+        className="header__nav-item"
+        to="/contact"
+        activeClassName="active-page"
+      >
+        Contact
+      </NavLink>
     </nav>
   </header>
 );
