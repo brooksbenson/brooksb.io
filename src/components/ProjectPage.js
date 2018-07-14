@@ -1,11 +1,11 @@
 import React from 'react';
 import Project from './Project';
-import ReactLogo from '../svgs/react.svg';
-import ReduxLogo from '../svgs/redux.svg';
-import FirebaseLogo from '../svgs/firebase.svg';
-import WebpackLogo from '../svgs/webpack.svg';
-import SassLogo from '../svgs/sass.svg';
-import JestLogo from '../svgs/jest.svg';
+import ReactLogo from '../images/react.svg';
+import ReduxLogo from '../images/redux.svg';
+import FirebaseLogo from '../images/firebase.svg';
+import WebpackLogo from '../images/webpack.svg';
+import SassLogo from '../images/sass.svg';
+import JestLogo from '../images/jest.svg';
 import projectData from '../data/projects';
 
 const nameToLogo = name => {

@@ -1,23 +1,20 @@
 import React from 'react';
+import ImageParagraph from './ImageParagraph';
 
 export default () => (
   <main className="contact-page content-offset">
     <h2 className="contact-page__heading"> Contact </h2>
-    <div className="contact-page__content">
-      <div className="contact-page__image" />
-      <h3 className="contact-page__name"> Brooks Benson </h3>
-      <a className="contact-page__email" href="mailto:brooks.benson@icloud.com">
-        brooks.benson@icloud.com
-      </a>
-      <div className="contact-page__about">
-        <h3> About me </h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus illo
-          officia quod error. Laudantium deleniti repudiandae cumque temporibus
-          voluptates deserunt consequuntur voluptate, vel aspernatur
-          voluptatibus dicta eum quaerat dolorem tempora.
-        </p>
-      </div>
-    </div>
+    <ImageParagraph
+      className="contact-page__about-me"
+      imgUrl="../images/me.jpg"
+      imgAlt="An image of me"
+    >
+      Thanks so much for checking out my webpage, it means a lot to me. If you
+      want to connect , here's a link to my{' '}
+      <a href="https://www.linkedin.com/in/brooks-benson/">LinkedIn</a> profile,
+      and here's a link to my{' '}
+      <a href="https://github.com/brooksbenson/">Github</a> profile. Hope you
+      have an awesome day.
+    </ImageParagraph>
   </main>
 );
