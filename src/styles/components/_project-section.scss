@@ -1,9 +1,10 @@
 .project-section {
-  padding: 0 $one-half-rem;
-
+  border-top: 1px dotted $theme-grey-light;
+  padding: 0 $half-rem;
+  padding-top: $two-rem;
   &__heading {
     color: $theme-black;
-    font-size: $three-rem;
+    font-size: $two-half-rem;
     font-weight: $font-weight-thin;
     transform: skew(-5deg);
   }

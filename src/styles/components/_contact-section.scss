@@ -1,19 +1,8 @@
-.contact-page {
-  padding: 0 $one-half-rem;
-
-  &__heading {
-    color: $theme-black;
-    font-size: $three-rem;
-    font-weight: $font-weight-thin;
-    transform: skew(-5deg);
-  }
+.contact-section {
+  margin-bottom: $one-half-rem;
   &__about-me {
     align-items: center;
-    background: $off-white;
-    border-radius: 3px;
-    border: 1px dotted black;
     display: flex;
-    margin-top: $one-rem;
     padding: $two-rem $one-rem;
     @media (max-width: 500px) {
       flex-direction: column;

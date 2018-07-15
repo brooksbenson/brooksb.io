@@ -1,32 +1,38 @@
 .header {
   border-bottom: 1px dotted $theme-grey-light;
   margin-bottom: $one-half-rem;
-  padding: $one-half-rem $one-rem;
+  padding: $one-half-rem $half-rem;
+  @media (max-width: 500px) {
+    padding: $one-rem $half-rem;
+  }
   &__text {
     color: $theme-green;
     font-size: $four-rem;
     font-weight: $font-weight-thick;
     margin: 0;
     transform: skew(-10deg);
-  }
-
-  &__nav {
-    color: $theme-grey;
-    font-size: $one-rem + 0.2;
-    margin-left: 2px;
-    margin-top: $one-rem;
-  }
-
-  &__nav-item {
-    border-bottom: 1px dotted $theme-grey-light;
-    margin-right: $one-rem;
-    text-decoration: none;
-    &:hover {
-      border-bottom: 1px dotted $theme-green;
+    @media (max-width: 500px) {
+      font-size: $three-half-rem;
     }
   }
+
+  // &__nav {
+  //   color: $theme-grey;
+  //   font-size: $one-rem + 0.2;
+  //   margin-left: 2px;
+  //   margin-top: $one-rem;
+  // }
+
+  // &__nav-item {
+  //   border-bottom: 1px dotted $theme-grey-light;
+  //   margin-right: $one-rem;
+  //   text-decoration: none;
+  //   &:hover {
+  //     border-bottom: 1px dotted $theme-green;
+  //   }
+  // }
 }
 
-.active-page {
-  border-bottom: 1px solid $theme-green;
-}
+// .active-page {
+//   border-bottom: 1px solid $theme-green;
+// }

@@ -25,21 +25,21 @@ const nameToLogo = name => {
   }
 };
 
-export default () => (
-  <section className="project-section content-offset">
-    <div className="project-section__content">
-      <h2 className="project-section__heading">Projects</h2>
-      {projectData.map(p => (
-        <Project
-          key={p.title}
-          title={p.title}
-          videoId={p.videoId}
-          techLogos={p.tech.map(nameToLogo)}
-          url={p.url}
-          repo={p.repo}
-          description={p.description}
-        />
-      ))}
-    </div>
+const ProjectSection = () => (
+  <section className="project-section">
+    <h2 className="project-section__heading">Projects</h2>
+    {projectData.map(p => (
+      <Project
+        key={p.title}
+        title={p.title}
+        videoId={p.videoId}
+        techLogos={p.tech.map(nameToLogo)}
+        url={p.url}
+        repo={p.repo}
+        description={p.description}
+      />
+    ))}
   </section>
 );
+
+export default ProjectSection;
