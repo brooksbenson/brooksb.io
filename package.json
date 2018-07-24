@@ -5,6 +5,11 @@
   "repository": "https://github.com/brooksbenson/brooksb.io.git",
   "author": "Brooks Benson <brooksbenson01@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "serve": "live-server",
+    "sass": "node-sass sass/index.scss styles.css -w",
+    "dev": "concurrently \"serve\" \"sass\""
+  },
   "devDependencies": {
     "concurrently": "^3.6.0",
     "live-server": "^1.2.0",

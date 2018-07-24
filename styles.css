@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box; }
+
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.7; }
+
+.heading-primary {
+  color: #323232;
+  display: block;
+  text-transform: uppercase; }
+  .heading-primary--main {
+    display: block;
+    font-size: 3rem;
+    letter-spacing: 2px; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 1px; }
+
+.u-margin-bottom-big {
+  margin-bottom: 8rem; }
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem; }
+
+.u-margin-bottom-small {
+  margin-bottom: 2rem; }
+
+.header {
+  background-image: linear-gradient(to bottom right, rgba(237, 237, 237, 0.8), rgba(225, 225, 225, 0.8));
+  background-position: top;
+  background-size: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  height: 95vh;
+  position: relative; }
+  .header__title-box {
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    width: 100%; }
+  .header__portrait-container {
+    border: 5px solid #fafafa;
+    border-radius: 50%;
+    display: inline-block;
+    overflow: hidden; }
+  .header__portrait {
+    height: 20rem;
+    width: 20rem; }
+
+.btn-main:link, .btn-main:visited {
+  background-color: #fafafa;
+  border-radius: 2px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  color: #323232;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  text-decoration: none;
+  transition: all 0.2s; }
+
+.btn-main:hover {
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px); }
+  .btn-main:hover::after {
+    opacity: 0;
+    transform: scaleX(1.4) scaleY(1.6); }
+
+.btn-main:active {
+  box-shadow: 0 0.5rem 0.2rem rgba(0, 0, 0, 0.2);
+  transform: translateY(0); }
+
+.btn-main::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: all 0.4s;
+  width: 100%;
+  z-index: -1; }
+
+body {
+  padding: 3rem; }

@@ -1,0 +1,37 @@
+.btn-main {
+  &:link,
+  &:visited {
+    background-color: $smoke;
+    border-radius: 2px;
+    box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
+    color: $charcoal;
+    display: inline-block;
+    font-size: 1.5rem;
+    padding: 1rem;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  &:hover {
+    box-shadow: 0 1rem 1.5rem rgba($black, 0.2);
+    transform: translateY(-2px);
+    &::after {
+      opacity: 0;
+      transform: scaleX(1.4) scaleY(1.6);
+    }
+  }
+  &:active {
+    box-shadow: 0 0.5rem 0.2rem rgba($black, 0.2);
+    transform: translateY(0);
+  }
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    transition: all 0.4s;
+    width: 100%;
+    z-index: -1;
+  }
+}

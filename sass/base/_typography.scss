@@ -1,0 +1,23 @@
+body {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.heading-primary {
+  color: $charcoal;
+  display: block;
+  text-transform: uppercase;
+  &--main {
+    display: block;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+  &--sub {
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+}
