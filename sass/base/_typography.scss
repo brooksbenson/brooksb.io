@@ -1,6 +1,6 @@
 body {
   color: black;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
 }
@@ -19,5 +19,24 @@ body {
     font-size: 1.8rem;
     font-weight: 300;
     letter-spacing: 1px;
+  }
+}
+
+.heading-secondary {
+  font-size: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.heading-tertiary {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 2rem;
+
+  &--small {
+    font-size: 1.6rem;
   }
 }

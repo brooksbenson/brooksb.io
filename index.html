@@ -4,17 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <title>www.brooksb.io</title>
+  <title>Brooks Benson</title>
 </head>
 
 <body>
 
-  <header class="header">
+  <div class="navigation">
+    <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
 
-    <!-- <div class="header__logo-box">
-      <span class="header__logo">www.brooksb.io</span>
-    </div> -->
+    <label for="navi-toggle" class="navigation__button">
+      <span class="navigation__icon">
+        &nbsp;
+      </span>
+    </label>
+
+    <div class="navigation__background"></div>
+
+    <nav class="navigation__nav">
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>01</span>About Me</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>02</span>My Skills</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>03</span>Projects</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">
+            <span>04</span>Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <header class="header">
 
     <div class="header__title-box">
       <div class="header__portrait-container u-margin-bottom-small">
@@ -24,10 +54,164 @@
         <span class="heading-primary--main">Brooks Benson</span>
         <span class="heading-primary--sub">Web Developer</span>
       </h1>
-      <a href="#" class="btn-main">View Projects</a>
+      <a href="#" class="btn-main">View Projects &rarr;</a>
     </div>
 
   </header>
+
+  <main>
+
+    <div class="section-about">
+      <h2 class="heading-secondary u-margin-bottom-medium">About Me</h2>
+      <div class="row section-about__content">
+        <div class="col-1-of-2 section-about__para">
+          <p class="paragraph">
+            I'm a web developer out of Provo, Utah. I think the web is cool because you can share resources with other people really
+            fast, and web browsers are flexible about the types displays you can create. I like to create those displays
+            and to setup the functionality that makes them useful to other people.
+          </p>
+        </div>
+        <div class="col-1-of-2 section-about__img">
+        </div>
+      </div>
+    </div>
+
+    <div class="section-skills">
+      <h2 class="heading-secondary u-margin-bottom-big">Skills</h2>
+      <div class="row section-skills__row">
+        <div class="col-1-of-4 section-skills__col">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/HTML">
+            <img src="img/tech/html.svg" alt="HTML5" class="section-skills__icon">
+          </a>
+        </div>
+        <div class="col-1-of-4 section-skills__col ">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">
+            <img src="img/tech/css.svg" alt="CSS3" class="section-skills__icon">
+          </a>
+        </div>
+        <div class="col-1-of-4 section-skills__col">
+          <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+            <img src="img/tech/javascript.svg" alt="JavaScript" class="section-skills__icon">
+          </a>
+        </div>
+        <div class="col-1-of-4 section-skills__col">
+          <a href="https://nodejs.org/en/">
+            <img src="img/tech/node.svg" alt="NodeJS" class="section-skills__icon">
+          </a>
+        </div>
+      </div>
+      <div class="row section-skills__row">
+        <div class="col-1-of-4 section-skills__col">
+          <a href="https://reactjs.org/">
+            <img src="img/tech/react.svg" alt="React" class="section-skills__icon">
+          </a>
+        </div>
+        <div class="col-1-of-4 section-skills__col ">
+          <a href="https://redux.js.org/">
+            <img src="img/tech/redux.svg" alt="Redux" class="section-skills__icon">
+          </a>
+        </div>
+        <div class="col-1-of-4 section-skills__col">
+          <a href="https://sass-lang.com/">
+            <img src="img/tech/sass.svg" alt="Sass" class="section-skills__icon">
+          </a>
+        </div>
+        <div class="col-1-of-4 section-skills__col">
+          <a href="https://firebase.google.com/">
+            <img src="img/tech/firebase.svg" alt="Firebase" class="section-skills__icon">
+          </a>
+        </div>
+      </div>
+      <div class="row section-skills__row">
+        <div class="col-1-of-4 section-skills__col">
+          <a href="https://git-scm.com/">
+            <img src="img/tech/git.svg" alt="Git" class="section-skills__icon">
+          </a>
+        </div>
+        <div class="col-1-of-4 section-skills__col ">
+          <a href="https://webpack.js.org/">
+            <img src="img/tech/webpack.svg" alt="Webpack" class="section-skills__icon">
+          </a>
+        </div>
+        <div class="col-1-of-4 section-skills__col">
+          <a href="https://www.postgresql.org/">
+            <img src="img/tech/postgresql.svg" alt="Sass" class="section-skills__icon">
+          </a>
+        </div>
+        <div class="col-1-of-4 section-skills__col">
+          <a href="http://www.passportjs.org/">
+            <img src="img/tech/passport.svg" alt="Passport" class="section-skills__icon">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-projects">
+      <h2 class="heading-secondary u-margin-bottom-medium">Projects</h2>
+      <article class="row section-projects__project">
+
+        <div class="col-1-of-2 section-projects__video-container">
+          <iframe class="section-projects__video" width="560" height="315" src="https://www.youtube.com/embed/9t-iozvyv6A" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+        <div class="col-1-of-2 section-projects__description">
+          <h3 class="heading-tertiary u-margin-bottom-medium">Express Ticketing</h3>
+          <p class="section-projects__para paragraph--small u-margin-bottom-medium">
+            Express Ticketing is an application for helping business who serve other businesses track issues related to their clients.
+            It accomplishes this by securely exposing an interface for raising issues, associating them with clients, and
+            collaborating with other users to resolve them.
+          </p>
+          <a href="https://github.com/brooksbenson/express-ticketing" class="section-projects__link">Github Repository</a>
+          <a href="https://express-ticketing.herokuapp.com/" class="section-projects__link">Live Site</a>
+        </div>
+
+      </article>
+
+      <article class="row section-projects__project">
+
+        <div class="col-1-of-2 section-projects__description">
+          <h3 class="heading-tertiary u-margin-bottom-medium">Expensify</h3>
+          <p class="section-projects__para paragraph--small u-margin-bottom-medium">
+            Expensify is an application that uses Google OAuth to securely store expenses that are recorded by a user. It provides a
+            simple to use interface for users to record their expenses and then to sort and filter them according to their
+            hearts desire.
+          </p>
+          <a href="https://github.com/brooksbenson/expensify" class="section-projects__link">Github Repository</a>
+          <a href="https://expensify17.herokuapp.com/" class="section-projects__link">Live Site</a>
+        </div>
+
+        <div class="col-1-of-2 section-projects__video-container">
+          <iframe class="section-projects__video" width="560" height="315" src="https://www.youtube.com/embed/tfgmD7z-Evc" frameborder="0"
+            allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+
+      </article>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <h2 class="footer__message u-margin-bottom-medium">Let's connect!</h2>
+    <div class="row footer__content">
+      <div class="col-1-of-3 footer__item">
+        <a href="https://www.linkedin.com/in/brooks-benson/">
+          <img class="footer__img" src="img/linkedin.svg" alt="My LinkedIn Profile">
+        </a>
+      </div>
+      <div class="col-1-of-3 footer__item">
+        <a href="https://github.com/brooksbenson//">
+          <img class="footer__img" src="img/github.svg" alt="My Github Profile">
+        </a>
+      </div>
+      <div class="col-1-of-3 footer__item">
+        <a href="mailto:brooks.benson@icloud.com">
+          <img class="footer__img" src="img/mail.svg" alt="Email Me!">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="scripts/nav.js"></script>
 
 </body>
 

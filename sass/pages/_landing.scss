@@ -1,0 +1,76 @@
+.section-about {
+  background-color: $smoke;
+  padding-bottom: 20rem;
+  padding-top: 25rem;
+  margin-top: -20rem;
+  z-index: -2;
+
+  &__para {
+    background-color: darken($smoke, 10%);
+    padding: 3rem;
+    position: relative;
+    p {
+      background-color: $smoke;
+      padding: 3rem;
+    }
+  }
+
+  &__img {
+    background-image: url(../../img/flying.jpg);
+    background-position: top;
+    background-size: cover;
+
+    height: 40rem;
+  }
+}
+
+.section-skills {
+  background-color: darken($smoke, 5%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -10rem;
+  padding: 12rem 0 25rem;
+
+  &__col {
+    text-align: center;
+  }
+
+  &__icon {
+    height: 12rem;
+    margin: auto;
+    width: 12rem;
+  }
+}
+
+.section-projects {
+  background-color: $smoke;
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -15rem;
+  padding: 15rem 0 10rem;
+
+  [class*='section-projects__description'] {
+    padding: 0 2rem;
+  }
+
+  &__project {
+    background-color: lighten($smoke, 10%);
+    box-shadow: 0 0 5px rgba($charcoal, 0.2);
+    padding: 3rem;
+  }
+
+  &__video {
+    width: 100%;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: blue;
+      display: block;
+      font-size: 1.4rem;
+      text-decoration: underline;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

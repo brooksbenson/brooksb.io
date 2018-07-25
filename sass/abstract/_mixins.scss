@@ -1,0 +1,30 @@
+@mixin clearfix {
+  &::after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+}
+
+@mixin respond($bp) {
+  @if $bp == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $bp == tab-land {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $bp == tab-port {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $bp == big-desktop {
+    @media (min-width: 1800px) {
+      @content;
+    }
+  }
+}
