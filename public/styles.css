@@ -1,3 +1,13 @@
+@keyframes moveFromBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  80% {
+    transform: translateY(-0.3rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -90,6 +100,7 @@ body {
     width: 20rem; }
 
 .btn-main:link, .btn-main:visited {
+  animation: moveFromBottom 1s;
   background-color: #fafafa;
   border-radius: 5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
@@ -183,13 +194,19 @@ body {
 .navigation__background {
   background-image: radial-gradient(#fafafa, #aeaeae);
   border-radius: 50%;
-  height: 6rem;
+  height: 7rem;
   position: fixed;
-  right: 6.5rem;
-  top: 6.5rem;
+  right: 6rem;
+  top: 6rem;
   transition: all 0.5s ease-in;
-  width: 6rem;
+  width: 7rem;
   z-index: 1000; }
+  @media (max-width: 600px) {
+    .navigation__background {
+      height: 5rem;
+      right: 3rem;
+      top: 3rem;
+      width: 5rem; } }
 
 .navigation__button {
   background-color: #fafafa;
@@ -202,6 +219,12 @@ body {
   top: 6rem;
   width: 7rem;
   z-index: 2000; }
+  @media (max-width: 600px) {
+    .navigation__button {
+      height: 5rem;
+      right: 3rem;
+      top: 3rem;
+      width: 5rem; } }
 
 .navigation__checkbox {
   display: none; }
@@ -217,15 +240,25 @@ body {
     display: inline-block;
     height: 2px;
     width: 3rem; }
+    @media (max-width: 600px) {
+      .navigation__icon, .navigation__icon::after, .navigation__icon::before {
+        height: 1px;
+        width: 2rem; } }
   .navigation__icon::after, .navigation__icon::before {
     content: '';
     left: 0;
     position: absolute;
     transition: all 0.2s; }
   .navigation__icon::after {
-    top: -0.8rem; }
+    top: 0.8rem; }
+    @media (max-width: 600px) {
+      .navigation__icon::after {
+        top: 0.5rem; } }
   .navigation__icon::before {
-    top: 0.9rem; }
+    top: -0.8rem; }
+    @media (max-width: 600px) {
+      .navigation__icon::before {
+        top: -0.35rem; } }
 
 .navigation__item {
   margin: 1rem; }
@@ -256,7 +289,8 @@ body {
   text-align: center;
   list-style: none;
   top: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  width: 100%; }
 
 .navigation__nav {
   display: none;
@@ -268,10 +302,16 @@ body {
   z-index: 1500; }
 
 .navigation__button:hover .navigation__icon::after {
-  top: 1rem; }
+  top: -1rem; }
+  @media (max-width: 600px) {
+    .navigation__button:hover .navigation__icon::after {
+      top: -0.5rem; } }
 
 .navigation__button:hover .navigation__icon::before {
-  top: -1rem; }
+  top: 1rem; }
+  @media (max-width: 600px) {
+    .navigation__button:hover .navigation__icon::before {
+      top: 0.6rem; } }
 
 .navigation__checkbox:checked ~ .navigation__background {
   transform: scale(80); }
@@ -307,7 +347,7 @@ body {
       padding: 3rem; }
   .section-about__img {
     background-image: url(../../img/flying.jpg);
-    background-position: top;
+    background-position: center;
     background-size: cover;
     border-radius: 3px;
     box-shadow: 0 0 5px rgba(50, 50, 50, 0.9);

@@ -1,6 +1,7 @@
 .btn-main {
   &:link,
   &:visited {
+    animation: moveFromBottom 1s;
     background-color: $smoke;
     border-radius: 5rem;
     box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
