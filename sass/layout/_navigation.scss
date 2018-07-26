@@ -15,7 +15,7 @@
     }
     @include respond(phone) {
       height: 5rem;
-      right: 3rem;
+      right: 2rem;
       top: 3rem;
       width: 5rem;
     }
@@ -37,7 +37,7 @@
     }
     @include respond(phone) {
       height: 5rem;
-      right: 3rem;
+      right: 2rem;
       top: 3rem;
       width: 5rem;
     }
@@ -73,13 +73,13 @@
     &::after {
       top: 0.8rem;
       @include respond(phone) {
-        top: 0.5rem;
+        top: 0.6rem;
       }
     }
     &::before {
-      top: -0.8rem;
+      top: -0.75rem;
       @include respond(phone) {
-        top: -0.35rem;
+        top: -0.55rem;
       }
     }
   }
@@ -137,7 +137,7 @@
   &__button:hover &__icon::after {
     top: -1rem;
     @include respond(phone) {
-      top: -0.5rem;
+      top: -0.6rem;
     }
   }
   &__button:hover &__icon::before {

@@ -204,7 +204,7 @@ body {
   @media (max-width: 600px) {
     .navigation__background {
       height: 5rem;
-      right: 3rem;
+      right: 2rem;
       top: 3rem;
       width: 5rem; } }
 
@@ -222,7 +222,7 @@ body {
   @media (max-width: 600px) {
     .navigation__button {
       height: 5rem;
-      right: 3rem;
+      right: 2rem;
       top: 3rem;
       width: 5rem; } }
 
@@ -253,12 +253,12 @@ body {
     top: 0.8rem; }
     @media (max-width: 600px) {
       .navigation__icon::after {
-        top: 0.5rem; } }
+        top: 0.6rem; } }
   .navigation__icon::before {
-    top: -0.8rem; }
+    top: -0.75rem; }
     @media (max-width: 600px) {
       .navigation__icon::before {
-        top: -0.35rem; } }
+        top: -0.55rem; } }
 
 .navigation__item {
   margin: 1rem; }
@@ -305,7 +305,7 @@ body {
   top: -1rem; }
   @media (max-width: 600px) {
     .navigation__button:hover .navigation__icon::after {
-      top: -0.5rem; } }
+      top: -0.6rem; } }
 
 .navigation__button:hover .navigation__icon::before {
   top: 1rem; }
