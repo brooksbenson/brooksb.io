@@ -12,12 +12,12 @@
       @content;
     }
   }
-  @if $bp == tab-land {
+  @if $bp == tab-port {
     @media (max-width: 900px) {
       @content;
     }
   }
-  @if $bp == tab-port {
+  @if $bp == tab-land {
     @media (max-width: 1200px) {
       @content;
     }

@@ -50,7 +50,7 @@
       top: -0.8rem;
     }
     &::before {
-      top: 0.8rem;
+      top: 0.9rem;
     }
   }
   &__item {
@@ -71,12 +71,11 @@
       );
       background-position: left;
       background-size: 250%;
-      border-radius: 3px;
       color: $charcoal;
       display: inline-block;
       font-size: 3rem;
       font-weight: 300;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem 2rem;
       text-decoration: none;
       transition: all 0.2s;
     }

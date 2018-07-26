@@ -1,13 +1,18 @@
 .section-about {
   background-color: $smoke;
-  padding-bottom: 20rem;
-  padding-top: 25rem;
+  padding: 25rem 5rem 20rem;
   margin-top: -20rem;
   z-index: -2;
-
+  @include respond(phone) {
+    padding: 25rem 2rem 15rem;
+  }
+  &__content {
+    margin: 0 auto;
+    max-width: 90rem;
+  }
   &__para {
     background-color: darken($smoke, 10%);
-    padding: 3rem;
+    box-shadow: 0 0 5px rgba($charcoal, 0.2);
     position: relative;
     p {
       background-color: $smoke;
@@ -19,8 +24,10 @@
     background-image: url(../../img/flying.jpg);
     background-position: top;
     background-size: cover;
+    border-radius: 3px;
 
-    height: 40rem;
+    box-shadow: 0 0 5px rgba($charcoal, 0.9);
+    height: 60rem;
   }
 }
 
@@ -28,33 +35,54 @@
   background-color: darken($smoke, 5%);
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
   margin-top: -10rem;
-  padding: 12rem 0 25rem;
+  padding: 12rem 3rem 30rem;
+
+  @include respond(tab-port) {
+    // clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  }
 
   &__col {
     text-align: center;
   }
 
   &__icon {
-    height: 12rem;
+    height: 8rem;
     margin: auto;
-    width: 12rem;
+    width: 8rem;
+    @include respond(tab-port) {
+      height: 7rem;
+      width: 7rem;
+    }
+    @include respond(phone) {
+      height: 6rem;
+      width: 6rem;
+    }
   }
 }
 
 .section-projects {
   background-color: $smoke;
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-  margin-top: -15rem;
-  padding: 15rem 0 10rem;
+  clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
+  margin-top: -20rem;
+  padding: 15rem 0 5rem;
 
   [class*='section-projects__description'] {
     padding: 0 2rem;
+    @include respond(tab-port) {
+      padding: 2rem 1rem;
+    }
   }
 
   &__project {
     background-color: lighten($smoke, 10%);
     box-shadow: 0 0 5px rgba($charcoal, 0.2);
+    margin: 0 3rem;
+    margin-bottom: 4rem !important;
     padding: 3rem;
+    @include respond(tab-port) {
+      margin: 0 1.5rem;
+      padding: 1.5rem;
+    }
   }
 
   &__video {

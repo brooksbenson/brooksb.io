@@ -6,13 +6,17 @@
   "author": "Brooks Benson <brooksbenson01@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server",
-    "sass": "node-sass sass/index.scss styles.css -w",
+    "serve": "live-server public/",
+    "sass": "node-sass sass/index.scss public/styles.css -w",
     "dev": "concurrently \"yarn run serve\" \"yarn run sass\""
   },
   "devDependencies": {
     "concurrently": "^3.6.0",
     "live-server": "^1.2.0",
     "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "smoothscroll": "^0.4.0"
   }
 }

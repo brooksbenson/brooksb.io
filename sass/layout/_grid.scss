@@ -8,6 +8,7 @@ $grid-horz-gutter: 6rem;
 
   &:not(:last-child) {
     margin-bottom: $grid-vert-gutter;
+    // @include respond();
   }
 
   @include clearfix;
@@ -22,6 +23,9 @@ $grid-horz-gutter: 6rem;
 
   .col-1-of-2 {
     width: calc((100% - #{$grid-horz-gutter}) / 2);
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
   .col-1-of-3 {
     width: calc((100% - #{$grid-horz-gutter} * 2) / 3);

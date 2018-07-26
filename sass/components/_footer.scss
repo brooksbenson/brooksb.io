@@ -14,5 +14,9 @@
   &__img {
     height: 10rem;
     width: 10rem;
+    @include respond(phone) {
+      height: 5rem;
+      width: 5rem;
+    }
   }
 }
