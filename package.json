@@ -8,7 +8,8 @@
   "scripts": {
     "serve": "live-server public/",
     "sass": "node-sass sass/index.scss public/styles.css -w",
-    "dev": "concurrently \"yarn run serve\" \"yarn run sass\""
+    "dev": "concurrently \"yarn run serve\" \"yarn run sass\"",
+    "start": "node server/index.js"
   },
   "devDependencies": {
     "concurrently": "^3.6.0",
