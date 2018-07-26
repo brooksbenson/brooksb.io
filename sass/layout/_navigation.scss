@@ -71,7 +71,7 @@
       transition: all 0.2s;
     }
     &::after {
-      top: 0.8rem;
+      top: 0.78rem;
       @include respond(phone) {
         top: 0.6rem;
       }

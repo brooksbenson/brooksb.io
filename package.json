@@ -6,9 +6,10 @@
   "author": "Brooks Benson <brooksbenson01@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "live-server public/",
-    "sass": "node-sass sass/index.scss public/styles.css -w",
+    "build": "node-sass sass/index.scss public/styles.css",
     "dev": "concurrently \"yarn run serve\" \"yarn run sass\"",
+    "sass": "node-sass sass/index.scss public/styles.css -w",
+    "serve": "live-server public/",
     "start": "node server/index.js"
   },
   "devDependencies": {

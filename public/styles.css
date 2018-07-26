@@ -250,7 +250,7 @@ body {
     position: absolute;
     transition: all 0.2s; }
   .navigation__icon::after {
-    top: 0.8rem; }
+    top: 0.78rem; }
     @media (max-width: 600px) {
       .navigation__icon::after {
         top: 0.6rem; } }
