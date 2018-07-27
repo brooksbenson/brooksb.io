@@ -377,16 +377,20 @@ body {
   background-color: #fafafa;
   clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
   margin-top: -20rem;
-  padding: 15rem 0 5rem; }
+  padding: 15rem 3rem 5rem; }
+  @media (max-width: 600px) {
+    .section-projects {
+      padding-left: 1rem;
+      padding-right: 1rem; } }
   .section-projects [class*='section-projects__description'] {
-    padding: 0 2rem; }
+    padding: 1rem 2rem; }
     @media (max-width: 900px) {
       .section-projects [class*='section-projects__description'] {
-        padding: 2rem 1rem; } }
+        padding: 2rem 1.5rem; } }
   .section-projects__project {
     background-color: white;
     box-shadow: 0 0 5px rgba(50, 50, 50, 0.2);
-    margin: 0 3rem;
+    margin: 0 auto;
     margin-bottom: 4rem !important;
     padding: 3rem; }
     @media (max-width: 900px) {
