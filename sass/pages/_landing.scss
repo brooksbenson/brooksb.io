@@ -37,25 +37,59 @@
   margin-top: -10rem;
   padding: 12rem 3rem 30rem;
 
-  @include respond(tab-port) {
-    // clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+  @include respond(phone-sm) {
+    padding: 12rem 3rem 25rem;
   }
 
   &__col {
     text-align: center;
+    & a {
+      &:link,
+      &:visited {
+        color: $grey;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+      }
+    }
   }
 
   &__icon {
     height: 8rem;
-    margin: auto;
+    margin-bottom: 1rem;
     width: 8rem;
     @include respond(tab-port) {
-      height: 7rem;
-      width: 7rem;
+      height: 6.5rem;
+      width: 6.5rem;
     }
     @include respond(phone) {
-      height: 6rem;
-      width: 6rem;
+      height: 5rem;
+      width: 5rem;
+    }
+    @include respond(phone-sm) {
+      height: 4rem;
+      width: 4rem;
+    }
+  }
+
+  &__text-box {
+    font-size: 1.7rem;
+    letter-spacing: 0.6px;
+    & span {
+      display: inline-block;
+      margin: auto;
+    }
+    @include respond(tab-port) {
+      font-size: 1.4rem;
+    }
+    @include respond(phone) {
+      font-size: 1.1rem;
+    }
+    @include respond(phone-sm) {
+      // fixes centering problem with shorter text labels
+      display: inline-block;
+      font-size: 0.9rem;
+      width: 4rem;
     }
   }
 }

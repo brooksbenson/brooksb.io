@@ -66,12 +66,85 @@ body {
 
 .u-margin-bottom-big {
   margin-bottom: 8rem; }
+  @media (max-width: 900px) {
+    .u-margin-bottom-big {
+      margin-bottom: 4rem; } }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem; }
+  @media (max-width: 900px) {
+    .u-margin-bottom-medium {
+      margin-bottom: 2rem; } }
 
 .u-margin-bottom-small {
   margin-bottom: 2rem; }
+
+.u-margin-top-small {
+  margin-top: 2rem; }
+
+.composition {
+  position: relative; }
+  @media (max-width: 900px) {
+    .composition {
+      margin-top: 7rem; }
+      .composition::after {
+        clear: both;
+        content: '';
+        display: table; } }
+  .composition__photo {
+    border-radius: 2px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+    outline-offset: 2rem;
+    position: absolute;
+    transition: all 0.2s;
+    width: 55%;
+    z-index: 10; }
+    @media (max-width: 900px) {
+      .composition__photo {
+        box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+        float: left;
+        position: relative;
+        width: 33.3333%; } }
+    .composition__photo--p1 {
+      left: 0;
+      top: -2rem; }
+      @media (max-width: 900px) {
+        .composition__photo--p1 {
+          top: 0;
+          transform: scale(1.1); } }
+    .composition__photo--p2 {
+      right: 0;
+      top: 2rem; }
+      @media (max-width: 900px) {
+        .composition__photo--p2 {
+          top: 0;
+          transform: scale(1.3);
+          z-index: 100; } }
+    .composition__photo--p3 {
+      left: 20%;
+      top: 10rem; }
+      @media (max-width: 900px) {
+        .composition__photo--p3 {
+          left: 0;
+          top: 0;
+          transform: scale(1.2); } }
+    .composition__photo:hover {
+      box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+      outline: 1.5rem solid #e1e1e1;
+      transform: scale(1.05) translateY(-0.5rem);
+      z-index: 20; }
+      @media (max-width: 900px) {
+        .composition__photo:hover {
+          outline: 0.75rem solid #e1e1e1;
+          outline-offset: 0.5rem;
+          transform: scale(1.4);
+          z-index: 101; } }
+  .composition:hover .composition__photo:not(:hover) {
+    transform: scale(0.85); }
+    @media (max-width: 900px) {
+      .composition:hover .composition__photo:not(:hover) {
+        transform: scale(1);
+        z-index: 100; } }
 
 .header {
   background-image: linear-gradient(to bottom right, rgba(237, 237, 237, 0.7), rgba(225, 225, 225, 0.7)), url(../../img/mountain.jpg);
@@ -198,7 +271,7 @@ body {
   position: fixed;
   right: 6rem;
   top: 6rem;
-  transition: all 0.5s ease-in;
+  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
   width: 7rem;
   z-index: 1000; }
   @media (max-width: 600px) {
@@ -255,7 +328,7 @@ body {
       .navigation__icon::after {
         top: 0.6rem; } }
   .navigation__icon::before {
-    top: -0.75rem; }
+    top: -0.76rem; }
     @media (max-width: 600px) {
       .navigation__icon::before {
         top: -0.55rem; } }
@@ -276,7 +349,7 @@ body {
   font-weight: 300;
   padding: 0.5rem 2rem;
   text-decoration: none;
-  transition: all 0.2s; }
+  transition: all 0.4s; }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: right;
@@ -358,20 +431,49 @@ body {
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
   margin-top: -10rem;
   padding: 12rem 3rem 30rem; }
+  @media (max-width: 450px) {
+    .section-skills {
+      padding: 12rem 3rem 25rem; } }
   .section-skills__col {
     text-align: center; }
+    .section-skills__col a:link, .section-skills__col a:visited {
+      color: #777;
+      display: block;
+      text-align: center;
+      text-decoration: none; }
   .section-skills__icon {
     height: 8rem;
-    margin: auto;
+    margin-bottom: 1rem;
     width: 8rem; }
     @media (max-width: 900px) {
       .section-skills__icon {
-        height: 7rem;
-        width: 7rem; } }
+        height: 6.5rem;
+        width: 6.5rem; } }
     @media (max-width: 600px) {
       .section-skills__icon {
-        height: 6rem;
-        width: 6rem; } }
+        height: 5rem;
+        width: 5rem; } }
+    @media (max-width: 450px) {
+      .section-skills__icon {
+        height: 4rem;
+        width: 4rem; } }
+  .section-skills__text-box {
+    font-size: 1.7rem;
+    letter-spacing: 0.6px; }
+    .section-skills__text-box span {
+      display: inline-block;
+      margin: auto; }
+    @media (max-width: 900px) {
+      .section-skills__text-box {
+        font-size: 1.4rem; } }
+    @media (max-width: 600px) {
+      .section-skills__text-box {
+        font-size: 1.1rem; } }
+    @media (max-width: 450px) {
+      .section-skills__text-box {
+        display: inline-block;
+        font-size: 0.9rem;
+        width: 4rem; } }
 
 .section-projects {
   background-color: #fafafa;
