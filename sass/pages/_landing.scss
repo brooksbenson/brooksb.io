@@ -111,21 +111,47 @@
     }
   }
 
-  &__project {
-    background-color: lighten($smoke, 10%);
+  [class*='section-projects__project'] {
+    background-image: linear-gradient(
+      95deg,
+      $smoke 0,
+      $smoke 50%,
+      lighten($smoke, 10%) 50%
+    );
     box-shadow: 0 0 5px rgba($charcoal, 0.2);
     margin: 0 auto;
     margin-bottom: 4rem !important;
     padding: 3rem;
     @include respond(tab-port) {
+      background-image: none;
+      background-color: white;
       margin: 0 1.5rem;
       padding: 1.5rem;
+    }
+  }
+
+  [class*='section-projects__project--alternate'] {
+    background-image: linear-gradient(
+      95deg,
+      lighten($smoke, 10%) 0,
+      lighten($smoke, 10%) 50%,
+      $smoke 50%
+    );
+    @include respond(tab-port) {
+      background-color: white;
+      background-image: none;
     }
   }
 
   &__video {
     height: 32rem;
     width: 100%;
+    @include respond(tab-port) {
+      height: 40rem;
+    }
+    @include respond(phone) {
+      height: 30rem;
+    }
   }
 
   &__link {
