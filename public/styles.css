@@ -500,6 +500,7 @@ body {
         margin: 0 1.5rem;
         padding: 1.5rem; } }
   .section-projects__video {
+    height: 32rem;
     width: 100%; }
   .section-projects__link:link, .section-projects__link:visited {
     color: blue;
