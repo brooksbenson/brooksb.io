@@ -271,7 +271,7 @@ body {
   position: fixed;
   right: 6rem;
   top: 6rem;
-  transition: all 0.6s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  transition: all 0.6s ease-in-out;
   width: 7rem;
   z-index: 1000; }
   @media (max-width: 600px) {
