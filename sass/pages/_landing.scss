@@ -19,16 +19,6 @@
       padding: 3rem;
     }
   }
-
-  &__img {
-    background-image: url(../../img/flying.jpg);
-    background-position: center;
-    background-size: cover;
-    border-radius: 3px;
-
-    box-shadow: 0 0 5px rgba($charcoal, 0.9);
-    height: 60rem;
-  }
 }
 
 .section-skills {
@@ -98,72 +88,8 @@
   background-color: $smoke;
   clip-path: polygon(0 6%, 100% 0, 100% 100%, 0 100%);
   margin-top: -20rem;
-  padding: 15rem 3rem 5rem;
+  padding: 15rem 3rem 10rem;
   @include respond(phone) {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  [class*='section-projects__description'] {
-    padding: 1rem 2rem;
-    @include respond(tab-port) {
-      padding: 2rem 1.5rem;
-    }
-  }
-
-  [class*='section-projects__project'] {
-    background-image: linear-gradient(
-      95deg,
-      $smoke 0,
-      $smoke 50%,
-      lighten($smoke, 10%) 50%
-    );
-    box-shadow: 0 0 5px rgba($charcoal, 0.2);
-    margin: 0 auto;
-    margin-bottom: 4rem !important;
-    padding: 3rem;
-    @include respond(tab-port) {
-      background-image: none;
-      background-color: white;
-      margin: 0 1.5rem;
-      padding: 1.5rem;
-    }
-  }
-
-  [class*='section-projects__project--alternate'] {
-    background-image: linear-gradient(
-      95deg,
-      lighten($smoke, 10%) 0,
-      lighten($smoke, 10%) 50%,
-      $smoke 50%
-    );
-    @include respond(tab-port) {
-      background-color: white;
-      background-image: none;
-    }
-  }
-
-  &__video {
-    height: 32rem;
-    width: 100%;
-    @include respond(tab-port) {
-      height: 40rem;
-    }
-    @include respond(phone) {
-      height: 30rem;
-    }
-  }
-
-  &__link {
-    &:link,
-    &:visited {
-      color: blue;
-      display: block;
-      font-size: 1.4rem;
-      text-decoration: underline;
-    }
-    &:not(:last-child) {
-      margin-bottom: 1rem;
-    }
+    padding: 12rem 0.5rem 5rem;
   }
 }

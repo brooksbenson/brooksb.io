@@ -1,0 +1,59 @@
+.project {
+  background-color: lighten($smoke, 10%);
+  box-shadow: 0 0 5px rgba($charcoal, 0.2);
+  height: 39rem;
+  margin: 0 auto;
+  padding: 3rem;
+  @include respond(tab-port) {
+    height: 68rem;
+    margin: 0 1.5rem;
+    padding: 1.5rem;
+  }
+
+  @include respond(phone) {
+    height: 60rem;
+    padding: 1.5rem;
+  }
+
+  @include respond(phone-sm) {
+    height: 64rem;
+  }
+
+  @include respond(phone-xsm) {
+    height: 68rem;
+  }
+
+  &__description {
+    padding: 1rem 2rem;
+    @include respond(tab-port) {
+      padding: 2rem 1.5rem;
+    }
+    @include respond(phone) {
+      padding: 2rem 1rem;
+    }
+  }
+
+  &__video {
+    height: 32rem;
+    width: 100%;
+    @include respond(tab-port) {
+      height: 40rem;
+    }
+    @include respond(phone) {
+      height: 30rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: blue;
+      display: block;
+      font-size: 1.4rem;
+      text-decoration: underline;
+    }
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

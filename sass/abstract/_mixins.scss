@@ -7,6 +7,12 @@
 }
 
 @mixin respond($bp) {
+  @if $bp == phone-xsm {
+    @media (max-width: 380px) {
+      @content;
+    }
+  }
+
   @if $bp == phone-sm {
     @media (max-width: 450px) {
       @content;
